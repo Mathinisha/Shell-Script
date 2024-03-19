@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Display EC2 instance information
+echo "=== EC2 Instance Information ==="
+aws ec2 describe-instances --output table
+
+# Display S3 bucket information
+echo "=== S3 Bucket Information ==="
+aws s3 ls
+
+# Display IAM user information
+echo "=== IAM User Information ==="
+aws iam list-users --output table
